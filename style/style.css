@@ -16,14 +16,16 @@
 }
 
 body {
+    background-image: url(../images/background.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    /*배경화면을 전체화면에 채워줌*/
+
     margin: 0 auto;
     text-align: center;
     background-color: #fff;
-    /*   background-image: url(../images/background.png);
-    background-repeat: no-repeat;
-      --> repeat속성: 배경이미지 크기조절이 불가능
-    background-size: cover;
-    */
+
 }
 
 a:link {
@@ -62,7 +64,7 @@ ul {
 
 
 
-div#outerwrap {
+/*div#outerwrap {
     width: 100%;
     height: 100%;
 
@@ -73,7 +75,7 @@ div#outerwrap {
     position: fixed;
     left: 0;
     top: 0;
-}
+}*/
 
 /* outerwrap --> 배경이미지적용 */
 
@@ -157,33 +159,37 @@ contents#contents {
     margin: 20px 5px 0 0;
 }
 
-#contents > #customer > h3 {
-    font-size: 18px;
+#contents h3 {
+    padding: 10px;
+    font-size: 17px;
     color: #fff;
-    padding: 12px;
+    text-align: left;
     background-color: #e76c6e;
 }
 
-#customer > ul {
+#customer ul {
     font-size: 15px;
-    margin: 15px 10px 0 40px;
+    padding: 20px 10px 0 20px;
     text-align: left;
-    line-height: 27px;
+    line-height: 25px;
     list-style: square;
+    list-style-position: inside;
     flex: 1;
 }
 
-#customer > ul > li > span {
+
+#customer span {
     font-weight: bold;
+    margin-right: 5px;
 }
 
 #contents > #flower,
 #contents > #flowerbox,
 #contents > #flowers {
     width: 230px;
-    height: 200px;
+    height: 210px;
     margin: 5px;
-    border: 2px dashed #aaa;
+    border: 2px dotted #aaa;
     border-radius: 10px;
     z-index: 0;
 }
@@ -194,44 +200,36 @@ contents#contents {
     border: 2px solid #aaa;
 }
 
-#flower img {
-    width: 200px;
-    height: 200px;
-    border-radius: 10px;
-    position: relative;
-    left: -14px;
-    top: -4px;
-    z-index: 1;
+#contents div:nth-child(2) {
+    background-image: url(../images/bg1.png);
+    background-repeat: no-repeat;
+    background-size: 200px 210px;
+
 }
 
-#flowerbox img {
-    width: 150px;
-    height: 200px;
-    border-radius: 10px;
-    position: relative;
-    left: -39px;
-    top: -4px;
-    z-index: 1;
+#contents div:nth-child(3) {
+    background-image: url(../images/bg2.png);
+    background-repeat: no-repeat;
+    background-size: 160px 210px;
+
+
 }
 
-#flowers img {
-    width: 140px;
-    height: 198px;
-    border-radius: 10px;
-    position: relative;
-    left: -43px;
-    top: -1px;
-    z-index: 1;
+#contents div:nth-child(4) {
+    background-image: url(../images/bg3.png);
+    background-repeat: no-repeat;
+    background-size: 170px 210px;
+
 }
 
 .article {
+    height: 70px;
     text-align: right;
     background-color: rgba(255, 255, 255, 0.5);
-    padding: 0 10px;
+    padding: 0 12px;
     position: relative;
-    left: -1px;
-    top: -85px;
-    z-index: 2;
+    left: 0px;
+    top: 125px;
 }
 
 .list1 {
@@ -247,6 +245,9 @@ contents#contents {
 }
 
 footer#footer {
+    font-size: 14px;
+    height: 60px;
+    line-height: 17px;
     justify-content: space-between;
     border-top: 1px solid #dedede;
 
@@ -261,15 +262,16 @@ footer#footer ul {
     list-style: none;
 }
 
-#footer .footerGnb > li {
+#footer .footerGnb li {
     padding-left: 20px;
 }
 
-#footer .footerGnb > li:hover {
+#footer .footerGnb li:hover {
     font-weight: bold;
     text-decoration: underline;
 }
 
-#footer .copyright {
+#footer #copyright {
     padding-right: 30px;
+    margin-top: 11px;
 }
